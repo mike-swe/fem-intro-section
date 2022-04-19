@@ -6,6 +6,7 @@ nav, ul, .menu, .clients {
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
+    position: relative;
 
 }
 
@@ -26,6 +27,29 @@ ul, .menu {
     }
 }
 
+.sub-menu > ul {
+    position: absolute;
+    top: 2.5rem;
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    // display: none;
+
+    li {
+        margin: 1rem 0;
+    }
+}
+
+.features:hover .features-sub-menu {
+    display: block;
+}
+
+.company:hover .company-sub-menu {
+    display: block;
+}
+
 .header-cta {
     a {
         color: #888;
@@ -38,7 +62,7 @@ ul, .menu {
     display: grid;
     place-items: center;
     grid-template-columns: repeat(2, 1fr);
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 
 .image-content > img {
