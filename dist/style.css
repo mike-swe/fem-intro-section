@@ -50,6 +50,7 @@ nav, ul, .menu, .clients {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2rem;
+  position: relative;
 }
 
 #logo {
@@ -69,6 +70,28 @@ ul li:hover, .menu li:hover {
   color: #111;
 }
 
+.sub-menu > ul {
+  position: absolute;
+  top: 2.5rem;
+  display: inline-block;
+  background-color: #fff;
+  padding: 10px 20px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+}
+
+.sub-menu > ul li {
+  margin: 1rem 0;
+}
+
+.features:hover .features-sub-menu {
+  display: block;
+}
+
+.company:hover .company-sub-menu {
+  display: block;
+}
+
 .header-cta a {
   color: #888;
   text-transform: lowercase;
@@ -81,7 +104,6 @@ ul li:hover, .menu li:hover {
   place-items: center;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  border: 1px solid red;
 }
 
 .image-content > img {
